@@ -10,6 +10,8 @@ echo "SKIP_MYSQL       = ${SKIP_MYSQL}"
 echo "SKIP_POSTGRESQL  = ${SKIP_POSTGRESQL}"
 echo "### Settler Build Configuration ###"
 
+sed -i "s/archive.ubuntu.com/mirrors.aliyun.com/g" /etc/apt/sources.list
+
 # Update Package List
 apt-get update
 
